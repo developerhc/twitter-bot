@@ -1,0 +1,5 @@
+== Advenced Twitter Bot
+
+This is source code of  how to build an Advanced Twitter Bot that will gather relevant news via Hacker News API, select the latest titles and links, filter, format them, shorten the links with bitly, add proper hashtags, compose tweets, and publish them via Twitter API or BufferApp API. And all that run independently with Heroku Scheduler.
+
+To be used together with tutorial on www.developerhc.com

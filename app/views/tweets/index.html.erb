@@ -1,0 +1,17 @@
+<% if @error_code.blank? %>
+  <p> Hi, <%= @name %>!</p>
+  <p> You have <%= @number_of_tweets %> tweets.</p>
+<% else %>
+  <p> There was an error. Code: <%= @error_code %>. </p>
+<% end %>
+
+<h2> News </h2>
+<h5>Day and month: <%= Time.now.to_formatted_s(:day_and_month)%></h5>
+<ul>
+  <% @data.each do |tweet| %>
+  <li><%= tweet  %></li>
+  <%end%>
+</ul>
+
+
+

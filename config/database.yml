@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: YOUR_DB
+  username: YOUR_USERNAME
+  password: YOUR_PASSWORD
+  host: ec2-54-83-204-78.compute-1.amazonaws.com
+  prot: 5432
+
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
